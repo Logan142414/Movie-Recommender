@@ -16,6 +16,16 @@ The system analyzes a user’s movie ratings, identifies similar users through c
 
 ---
 
+## Why This Project?
+
+Most recommendation systems optimize for engagement, not genuine preference. Platforms like Netflix and Spotify rely on clicks, watch time, and completion rate; signals that often blur the line between what we consumed and what we truly enjoyed.
+
+Instead of inferring taste from behavior, the system uses explicit movie ratings and transparent similarity logic. By comparing your ratings with those of people who rate films like you do, the system uncovers recommendations grounded in shared taste.
+
+Collaborative filtering works because people with similar rating patterns tend to enjoy similar movies. This system makes that logic visible and interpretable. Every recommendation can be traced back to specific users, their ratings, and how closely their preferences align with yours.
+
+---
+
 ## Features
 
 ### Personalized Recommendation Engine
@@ -42,13 +52,11 @@ The system analyzes a user’s movie ratings, identifies similar users through c
 
 * Improves accuracy and user experience.
 
-### Large-Scale Dataset Support
+### Large Scale Dataset Support
 
 * Uses MovieLens 32M (32M ratings, 87k+ movies).
 
-* Automatic download and extraction on first run.
-
-* Supports manual upload of movies.csv and ratings.csv.
+* Automatic download and extraction on first run (And supports manual upload of movies.csv and ratings.csv.).
 
 ### Mainstream Bias Correction
 
@@ -106,17 +114,13 @@ The system analyzes a user’s movie ratings, identifies similar users through c
 
  * Rated by at least 4 neighbors
 
- * With high similarity-weighted scores
-
- * Apply popularity penal
+ * With high similarity weighted scores
 
 ---
 
 ##  Project Learnings
 
 * Built a complete recommendation pipeline using statistical methods.
-
-* Learned how to merge and process extremely large datasets efficiently.
 
 * Implemented Pearson correlation for user similarity scoring.
 
@@ -126,10 +130,8 @@ The system analyzes a user’s movie ratings, identifies similar users through c
 
 ## Future Enhancements
 
-* Add item-based collaborative filtering for comparison.
-
 * Build a Streamlit or web interface for interactive recommendations.
 
-* Integrate content-based features (genres, tags) for hybrid recommendations.
+* Integrate content based features (genres, tags) for hybrid recommendations.
 
-* Add caching or vectorized similarity functions for speed on larger input sets.
+* Add AI integration in some form to improve the recommendation system.
