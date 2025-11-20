@@ -135,3 +135,15 @@ Collaborative filtering works because people with similar rating patterns tend t
 * Integrate content based features (genres, tags) for hybrid recommendations.
 
 * Add AI integration in some form to improve the recommendation system.
+
+---
+
+## App
+- Colab demo: [Script](https://github.com/Logan142414/MarchMadness2025Model/blob/main/MarchMadness_Data_Science.ipynb)
+
+---
+  
+## Medium Article
+- [How to Build a Movie Recommender That Actually Understands Your Taste](https://medium.com/@logan.laszewski14/movie-recommendation-system-56c4a8c53ab4)
+
+
