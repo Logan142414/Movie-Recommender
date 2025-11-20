@@ -36,25 +36,25 @@ The system analyzes a user’s movie ratings, identifies similar users through c
 
 ### Fuzzy Title Matching (RapidFuzz)
 
-Handles natural, imperfect, or partial title input.
+* Handles natural, imperfect, or partial title input.
 
-Matches entries like “Knives Out Mystery” to “Glass Onion: A Knives Out Mystery (2022)”.
+* Matches entries like “Knives Out Mystery” to “Glass Onion: A Knives Out Mystery (2022)”.
 
-Improves accuracy and user experience.
+* Improves accuracy and user experience.
 
 ### Large-Scale Dataset Support
 
-Uses MovieLens 32M (32M ratings, 87k+ movies).
+* Uses MovieLens 32M (32M ratings, 87k+ movies).
 
-Automatic download and extraction on first run.
+* Automatic download and extraction on first run.
 
-Supports manual upload of movies.csv and ratings.csv.
+* Supports manual upload of movies.csv and ratings.csv.
 
 ### Mainstream Bias Correction
 
-Applies a gentle popularity penalty so recommendations surface more interesting, less obvious titles.
+* Applies a gentle popularity penalty so recommendations surface more interesting, less obvious titles.
 
-Prevents lists dominated by well-known blockbusters.
+* Prevents lists dominated by well-known blockbusters.
 
 ---
 
@@ -76,60 +76,60 @@ Prevents lists dominated by well-known blockbusters.
 
 1. Dataset Setup
 
-Download or load movies.csv and ratings.csv from the MovieLens 32M dataset.
+ * Download or load movies.csv and ratings.csv from the MovieLens 32M dataset.
 
-Merge movie info and ratings into a single dataset.
+ * Merge movie info and ratings into a single dataset.
 
 2. User Input Collection
 
-User enters 8–20 movies with ratings.
+ * User enters 8–20 movies with ratings.
 
-Fuzzy matching ensures correct title identification.
+ * Fuzzy matching ensures correct title identification.
 
 3. Find Similar Users
 
-Identify MovieLens users with at least 70% overlap in rated movies.
+ * Identify MovieLens users with at least 70% overlap in rated movies.
 
-Filter down to meaningful comparison sets.
+ * Filter down to meaningful comparison sets.
 
 4. Compute Similarity
 
-Use Pearson correlation to measure rating agreement.
+ * Use Pearson correlation to measure rating agreement.
 
-Retain the top 10 positively correlated users.
+ * Retain the top 10 positively correlated users.
 
 5. Generate Recommendations
 
-Recommend movies:
+* Recommend movies:
 
-Not yet rated by the user
+ * Not yet rated by the user
 
-Rated by at least 4 neighbors
+ * Rated by at least 4 neighbors
 
-With high similarity-weighted scores
+ * With high similarity-weighted scores
 
-Apply popularity penal
+ * Apply popularity penal
 
 ---
 
 ##  Project Learnings
 
-Built a complete recommendation pipeline using statistical methods.
+* Built a complete recommendation pipeline using statistical methods.
 
-Learned how to merge and process extremely large datasets efficiently.
+* Learned how to merge and process extremely large datasets efficiently.
 
-Implemented Pearson correlation for user similarity scoring.
+* Implemented Pearson correlation for user similarity scoring.
 
-Improved usability with fuzzy matching and mainstream bias adjustments.
+* Improved usability with fuzzy matching and mainstream bias adjustments.
 
-Explored real recommendation system logic used by streaming platforms.
+* Explored real recommendation system logic used by streaming platforms.
 
 ## Future Enhancements
 
-Add item-based collaborative filtering for comparison.
+* Add item-based collaborative filtering for comparison.
 
-Build a Streamlit or web interface for interactive recommendations.
+* Build a Streamlit or web interface for interactive recommendations.
 
-Integrate content-based features (genres, tags) for hybrid recommendations.
+* Integrate content-based features (genres, tags) for hybrid recommendations.
 
-Add caching or vectorized similarity functions for speed on larger input sets.
+* Add caching or vectorized similarity functions for speed on larger input sets.
