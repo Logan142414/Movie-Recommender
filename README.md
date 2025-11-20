@@ -1,7 +1,9 @@
 # Movie Recommendation System
 
 **Author:** Logan Laszewski
+
 **Project Type:** Data Analysis, Recommendation Systems, Python
+
 **Last Updated:** November 2025
 
 ---
@@ -18,19 +20,19 @@ The system analyzes a user’s movie ratings, identifies similar users through c
 
 ### Personalized Recommendation Engine
 
-Users enter 8–20 movies and rate them on a 1–5 scale.
+* Users enter 8–20 movies and rate them on a 1–5 scale.
 
-The system:
+* The system:
 
-Finds MovieLens users who rated ≥70% of the same movies
+  * Finds MovieLens users who rated ≥70% of the same movies
 
-Computes Pearson correlation to measure similarity
+  * Computes Pearson correlation to measure similarity
 
-Selects the top 10 “taste neighbors”
+  * Selects the top 10 “taste neighbors”
 
-Recommends films those neighbors rated highly
+  * Recommends films those neighbors rated highly
 
-No machine learning training required — purely statistical and data-driven.
+* No machine learning training required — purely statistical and data-driven.
 
 ### Fuzzy Title Matching (RapidFuzz)
 
